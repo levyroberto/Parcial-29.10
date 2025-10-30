@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <hr>
+  <form id="form-numero" action="/numeros/entrada" method="POST">
+    <h2>Agregar un Número</h2>
+    <label>Número:</label>
+    <input type="number" name="numero" required><br>
+    <button type="submit">Guardar</button>
+  </form>
+
+  <hr>
+  <div class="botones">
+  <button onclick="window.open('/numeros/entrada', '_blank')">Ver Listado de Números (GET)</button>
+  <button onclick="window.open('/numeros/promedio', '_blank')">Ver Promedio de Números (GET)</button>
+  <button onclick="window.open('/numeros/minmax', '_blank')">Ver Mínimo y Máximo de Números (GET)</button>
+  <button onclick="window.open('/numeros/cantidad', '_blank')">Ver Cantidad de Números (GET)</button> 
+</div>
+</body> 
+</html>
